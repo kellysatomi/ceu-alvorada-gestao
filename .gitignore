@@ -224,3 +224,8 @@ __marimo__/
 .env
 instance/
 dev.db
+
+# Segredos e banco local (nunca enviar ao repositório)
+.env
+instance/
+dev.db
