@@ -37,3 +37,13 @@ pytest --cov=app --cov-report=term-missing
 ## Contexto
 Projeto da disciplina Projeto de Software (ODS 4: Educação de Qualidade).
 Autora: Kelly Satomi Habara Cruz
+
+
+## Requisitos funcionais
+- RF01 (obrigatório): autenticar a equipe por e-mail e senha antes de liberar as telas internas.
+- RF02 (obrigatório): cadastrar atividades com número de vagas.
+- RF03 (obrigatório): inscrever participantes e mostrar as vagas livres atualizadas.
+- RF04 (obrigatório): reservar espaços e bloquear horários sobrepostos, informando o horário em conflito.
+- RF05 (obrigatório): registrar presença apenas de inscritos ativos.
+- RF06 (obrigatório): exibir painel com inscritos, vagas livres e frequência.
+- RF07 (desejável): cancelar inscrição mantendo o histórico.
