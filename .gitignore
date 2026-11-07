@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Segredos e banco local (nunca enviar ao repositório)
+.env
+instance/
+dev.db
