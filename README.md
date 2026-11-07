@@ -47,3 +47,11 @@ Autora: Kelly Satomi Habara Cruz
 - RF05 (obrigatório): registrar presença apenas de inscritos ativos.
 - RF06 (obrigatório): exibir painel com inscritos, vagas livres e frequência.
 - RF07 (desejável): cancelar inscrição mantendo o histórico.
+
+
+## Incrementos planejados
+1. Login e controle de acesso (RF01)
+2. Atividades e inscrições com controle de vagas (RF02 e RF03)
+3. Agenda de espaços com bloqueio de conflito de horário (RF04)
+4. Presença por turma e painel (RF05 e RF06)
+5. Cancelamento de inscrição (RF07, desejável)v
