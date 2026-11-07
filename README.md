@@ -56,8 +56,10 @@ Autora: Kelly Satomi Habara Cruz
 4. Presença por turma e painel (RF05 e RF06)
 5. Cancelamento de inscrição (RF07, desejável)
 
-6. ## Regras de negócio
+ ## Regras de negócio
 - Vagas livres = vagas da atividade menos as inscrições ativas.
 - Inscrição recusada sem vaga, em atividade encerrada ou duplicada.
 - Reserva recusada quando o horário se sobrepõe a outra no mesmo espaço e data.
 - Presença só é registrada para inscrições ativas.
+
+- 
