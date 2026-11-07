@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<h1 class="h4">Entrar</h1>
+<form method="post">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <label class="form-label" for="email">E-mail</label>
+  <input class="form-control mb-2" id="email" name="email" type="email" required>
+  <label class="form-label" for="senha">Senha</label>
+  <input class="form-control mb-3" id="senha" name="senha" type="password" required>
+  <button class="btn btn-primary btn-lg w-100" type="submit">Entrar</button>
+</form>
+{% endblock %}

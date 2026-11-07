@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<h1 class="h4">Reservar espaço</h1>
+<form method="post">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <label class="form-label" for="espaco">Espaço</label>
+  <select class="form-select mb-2" id="espaco" name="espaco">
+    {% for e in espacos %}<option value="{{ e.id_espaco }}">{{ e.nome }}</option>{% endfor %}
+  </select>
+  <label class="form-label" for="atividade">Atividade</label>
+  <select class="form-select mb-2" id="atividade" name="atividade">
+    {% for a in atividades %}<option value="{{ a.id_atividade }}">{{ a.nome }}</option>{% endfor %}
+  </select>
+  <label class="form-label" for="data">Data</label>
+  <input class="form-control mb-2" id="data" name="data" type="date" required>
+  <div class="row">
+    <div class="col"><label class="form-label" for="inicio">Hora de início</label>
+      <input class="form-control" id="inicio" name="inicio" type="time" required></div>
+    <div class="col"><label class="form-label" for="fim">Hora de fim</label>
+      <input class="form-control" id="fim" name="fim" type="time" required></div>
+  </div>
+  <button class="btn btn-primary btn-lg w-100 mt-3" type="submit">Reservar</button>
+  <a class="btn btn-outline-primary w-100 mt-2" href="{{ url_for('main.painel') }}">Cancelar</a>
+</form>
+{% endblock %}

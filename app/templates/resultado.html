@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<h1 class="h4">Resultado da reserva</h1>
+<div class="alert {{ 'alert-success' if ok else 'alert-danger' }}" role="alert" tabindex="-1">
+  {{ '✔' if ok else '⚠' }} {{ mensagem }}
+</div>
+<a class="btn btn-primary btn-lg w-100 mb-2" href="{{ url_for('main.reservar_espaco') }}">{{ 'Ver agenda' if ok else 'Escolher outro horário' }}</a>
+<a class="btn btn-outline-primary w-100" href="{{ url_for('main.painel') }}">Voltar ao painel</a>
+{% endblock %}

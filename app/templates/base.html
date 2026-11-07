@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CEU Alvorada · Gestão</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar bg-primary navbar-dark px-3">
+  <span class="navbar-brand">CEU Alvorada · Gestão de Atividades e Espaços</span>
+  {% if current_user.is_authenticated %}
+  <a class="btn btn-outline-light" href="{{ url_for('auth.sair') }}">Sair</a>
+  {% endif %}
+</nav>
+<main class="container py-3" style="max-width: 640px">
+  {% for categoria, msg in get_flashed_messages(with_categories=true) %}
+  <div class="alert alert-danger" role="alert">⚠ {{ msg }}</div>
+  {% endfor %}
+  {% block conteudo %}{% endblock %}
+</main>
+</body>
+</html>
