@@ -54,4 +54,10 @@ Autora: Kelly Satomi Habara Cruz
 2. Atividades e inscrições com controle de vagas (RF02 e RF03)
 3. Agenda de espaços com bloqueio de conflito de horário (RF04)
 4. Presença por turma e painel (RF05 e RF06)
-5. Cancelamento de inscrição (RF07, desejável)v
+5. Cancelamento de inscrição (RF07, desejável)
+
+6. ## Regras de negócio
+- Vagas livres = vagas da atividade menos as inscrições ativas.
+- Inscrição recusada sem vaga, em atividade encerrada ou duplicada.
+- Reserva recusada quando o horário se sobrepõe a outra no mesmo espaço e data.
+- Presença só é registrada para inscrições ativas.
